@@ -24,39 +24,26 @@ header h1 {
     color: #333;
 }
 
-/* Navigation Links - Horizontal Row */
-.destination-links ul {
+/* Navigation Banner Section Below the Welcome */
+.nav-banner {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-    list-style-type: none;
+    gap: 30px;
+    background-color: #d1cfcf;
+    padding: 20px;
 }
 
-.destination-links li {
-    display: inline;
-}
-
-.destination-links a {
+.nav-link {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #333;
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.destination-links a:hover {
-    color: #007bff;
-}
-
-/* My Favorite Trips Section */
-.favorite-trips {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.favorite-trips h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
+.nav-link:hover {
+    color: #d1cfcf; /* Change to match the background color of the welcome header */
 }
 
 /* Polaroid Gallery Section */
@@ -100,52 +87,39 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Description Section */
+/* Descriptions Section */
 .descriptions {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .description {
-    width: 30%;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .description h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
 }
 
 .description p {
     font-size: 1rem;
-    color: #555;
+    color: #666;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .destination-links ul {
-        flex-direction: column;
-    }
-
     .polaroid-gallery {
         flex-direction: column;
-        align-items: center;
     }
 
-    .descriptions {
+    .polaroid {
+        width: 200px;
+        height: 250px;
+    }
+
+    .nav-banner {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .description {
-        width: 80%;
-        margin-bottom: 20px;
     }
 }
