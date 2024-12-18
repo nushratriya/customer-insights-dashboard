@@ -81,7 +81,7 @@ section {
 
 /* Specific Section Padding */
 #dubai, #japan, #new-york {
-    padding-left: 60px; /* Move the section content further right */
+    padding-left: 200px; /* Move the section content further right */
 }
 
 /* Responsive Design */
