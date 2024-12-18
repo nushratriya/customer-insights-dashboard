@@ -64,7 +64,7 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Specific Adjustments for Second and Fourth Photos */
+/* Adjustments for Specific Polaroids */
 .polaroid:nth-child(2) {
     transform: rotate(5deg); /* Tilt second photo to the right */
 }
