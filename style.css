@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -42,7 +42,7 @@ header h1 {
     padding: 20px;
     text-align: center;
     overflow: hidden;
-    transform: rotate(-5deg);
+    transform: rotate(-5deg); /* Default tilt */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -63,6 +63,15 @@ header h1 {
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+}
+
+/* Alternate tilt for every other Polaroid */
+.polaroid:nth-child(odd) {
+    transform: rotate(-5deg); /* Tilt left */
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(5deg); /* Tilt right */
 }
 
 /* Cursive Font for Section Headings (Dubai, Japan, New York) */
