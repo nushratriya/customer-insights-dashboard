@@ -22,24 +22,24 @@ header h1 {
     color: #333;
 }
 
-/* Styling for Section Titles */
-section h2 {
+/* Destination Titles */
+.destination-title {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     color: #333;
-    margin-left: 20px; /* Adjust the left margin for spacing */
-    margin-top: 30px;  /* Adjust the top margin for spacing */
-    margin-bottom: 15px; /* Add some space below the heading */
+    margin-left: 20px;  /* Adds space from the left */
+    margin-top: 40px;   /* Adds space from the top */
 }
 
 /* Polaroid Gallery */
 .polaroid-gallery {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin-top: 50px;
+    gap: 30px;  /* Increased gap between polaroids */
+    margin-top: 30px;
 }
 
+/* Default Polaroid Tilt (left) */
 .polaroid {
     position: relative;
     width: 250px;
@@ -50,36 +50,37 @@ section h2 {
     padding: 20px;
     text-align: center;
     overflow: hidden;
-    transform: rotate(-5deg);
+    transform: rotate(-5deg); /* Tilt to the left */
     transition: transform 0.3s ease-in-out;
 }
 
+/* Right Tilt for 2nd and 4th Images */
+.polaroid:nth-child(2) {
+    transform: rotate(5deg); /* Tilt to the right */
+}
+
+.polaroid:nth-child(4) {
+    transform: rotate(5deg); /* Tilt to the right */
+}
+
+/* Polaroid Image Styles */
 .polaroid img {
     width: 100%;
-    height: 80%;
+    height: 60%;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
+/* Hover Effect */
 .polaroid:hover {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Reset tilt on hover */
 }
 
+/* Caption Styling */
 .polaroid .caption {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .polaroid-gallery {
-        flex-direction: column;
-    }
-    .polaroid {
-        width: 200px;
-        height: 250px;
-    }
 }
