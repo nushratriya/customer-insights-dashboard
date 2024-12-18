@@ -65,9 +65,12 @@ header h1 {
 }
 
 /* Specific Adjustments for Second and Fourth Photos */
-.polaroid:nth-child(2),
+.polaroid:nth-child(2) {
+    transform: rotate(5deg); /* Tilt second photo to the right */
+}
+
 .polaroid:nth-child(4) {
-    transform: rotate(5deg); /* Tilt these photos to the right */
+    transform: rotate(5deg); /* Tilt fourth photo to the right */
 }
 
 /* Sections for Place Descriptions */
