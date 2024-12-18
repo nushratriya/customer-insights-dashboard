@@ -26,7 +26,8 @@ header h1 {
 /* Polaroid Gallery */
 .polaroid-gallery {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 20px;
     margin-top: 50px;
 }
@@ -64,23 +65,13 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Place Titles */
-.place-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #333;
-    margin-top: 30px;
+/* Cursive Font for Section Headings (Dubai, Japan, New York) */
+section h2 {
+    font-family: 'Dancing Script', cursive; /* Cursive font */
+    font-size: 2.5rem;
+    color: #333; /* Color can be adjusted as needed */
+    text-align: left;
     margin-bottom: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-/* Section Description */
-section p {
-    font-size: 1rem;
-    color: #333;
-    text-align: left;
-    padding-left: 20px;
 }
 
 /* Responsive Design */
