@@ -11,19 +11,70 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-H23NCN5NJ3');
     </script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Travel Diary</h1>
-    <p>Here are some of the amazing places I've visited!</p>
+    <header>
+        <h1>Welcome to My Travel Diary!</h1>
+    </header>
 
-    <h2>Destinations</h2>
-    <ul>
-        <li><a href="dubai.html" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'Dubai'});">Dubai</a></li>
-        <li><a href="japan.html" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'Japan'});">Japan</a></li>
-        <li><a href="newyork.html" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'New York'});">New York</a></li>
-    </ul>
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="polaroid">
+            <img src="path/to/dubai-photo.jpg" alt="Dubai Photo">
+            <div class="caption">
+                <a href="#dubai" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'Dubai'});">Dubai</a>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="path/to/japan-photo.jpg" alt="Japan Photo">
+            <div class="caption">
+                <a href="#japan" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'Japan'});">Japan</a>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="path/to/new-york-photo.jpg" alt="New York Photo">
+            <div class="caption">
+                <a href="#new-york" onclick="gtag('event', 'click', {'event_category': 'Destination', 'event_label': 'New York'});">New York</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dubai" class="blog-post">
+        <h2>Exploring Dubai</h2>
+        <img src="dubai photos/IMG_0234_Original_Original.jpg" alt="Dubai" class="destination-image">
+        <p>Dubai is a fascinating blend of modern architecture, luxury shopping, and a rich cultural heritage...</p>
+        <div class="map-container">
+            <h3>Location: Dubai</h3>
+            <iframe src="https://www.google.com/maps/place/Dubai+-+United+Arab+Emirates/@25.0760225,55.227488,10z/data=!3m1!4b1!4m6!3m5!1s0x3e5f43496ad9c645:0xbde66e5084295162!8m2!3d25.2048493!4d55.2707828!16zL20vMDFmMDhy?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="japan" class="blog-post">
+        <h2>Discovering Japan</h2>
+        <img src="path/to/japan-photo.jpg" alt="Japan" class="destination-image">
+        <p>Japan is known for its rich history, stunning landscapes, and innovative culture...</p>
+        <div class="map-container">
+            <h3>Location: Japan</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="new-york" class="blog-post">
+        <h2>Exploring New York</h2>
+        <img src="path/to/new-york-photo.jpg" alt="New York" class="destination-image">
+        <p>New York City is a bustling metropolis known for its iconic landmarks and diverse culture...</p>
+        <div class="map-container">
+            <h3>Location: New York</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

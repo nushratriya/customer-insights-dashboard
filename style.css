@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.polaroid {
+    width: 300px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.polaroid:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+caption a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.caption a:hover {
+    color: #007bff;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.destination-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
