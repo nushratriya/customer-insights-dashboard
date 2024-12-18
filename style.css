@@ -55,18 +55,18 @@ header h1 {
 }
 
 /* Right Tilt for 2nd and 4th Images */
-.polaroid:nth-child(2) {
+.polaroid:nth-of-type(2) {
     transform: rotate(5deg); /* Tilt to the right */
 }
 
-.polaroid:nth-child(4) {
+.polaroid:nth-of-type(4) {
     transform: rotate(5deg); /* Tilt to the right */
 }
 
 /* Polaroid Image Styles */
 .polaroid img {
     width: 100%;
-    height: 50%;
+    height: 60%;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -83,4 +83,40 @@ header h1 {
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+}
+
+/* Section Styling for Descriptions */
+section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Spacing for the Descriptions and Images */
+section .polaroid-gallery {
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .polaroid-gallery {
+        flex-direction: column;
+    }
+
+    .polaroid {
+        width: 200px;
+        height: 250px;
+    }
 }
