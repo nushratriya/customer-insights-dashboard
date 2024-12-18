@@ -10,7 +10,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Banner Section */
 header.banner {
     background-color: #d1cfcf;
     text-align: center;
@@ -21,6 +20,16 @@ header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     color: #333;
+}
+
+/* Styling for Section Titles */
+section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #333;
+    margin-left: 20px; /* Adjust the left margin for spacing */
+    margin-top: 30px;  /* Adjust the top margin for spacing */
+    margin-bottom: 15px; /* Add some space below the heading */
 }
 
 /* Polaroid Gallery */
@@ -41,7 +50,7 @@ header h1 {
     padding: 20px;
     text-align: center;
     overflow: hidden;
-    transform: rotate(-5deg); /* Default tilt to the left */
+    transform: rotate(-5deg);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -64,54 +73,6 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Adjustments for Specific Polaroids */
-.polaroid:nth-child(2) {
-    transform: rotate(5deg); /* Tilt second photo to the right */
-}
-
-.polaroid:nth-child(4) {
-    transform: rotate(5deg); /* Tilt fourth photo to the right */
-}
-
-/* Sections for Place Descriptions */
-.section-heading {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #333;
-    text-align: left;
-    margin-top: 30px;
-    padding-left: 20px;
-}
-
-/* Description Section */
-.description-section {
-    padding: 20px;
-    text-align: left;
-}
-
-.description-section p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Description Gallery */
-.description-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.description-gallery .polaroid {
-    width: 200px;
-    height: 250px;
-}
-
-.description-gallery .polaroid img {
-    height: 50%;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .polaroid-gallery {
@@ -120,13 +81,5 @@ header h1 {
     .polaroid {
         width: 200px;
         height: 250px;
-    }
-    
-    .description-gallery {
-        flex-direction: column;
-    }
-    .description-gallery .polaroid {
-        width: 180px;
-        height: 220px;
     }
 }
