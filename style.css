@@ -68,20 +68,20 @@ h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     text-align: left;
-    margin-top: 50px; /* Add margin-top to create space above the heading */
-    margin-bottom: 20px; /* Add margin-bottom to space it from the content below */
-    padding-left: 20px; /* Add left padding to space the heading further from the left edge */
+    margin-top: 100px; /* Add margin-top to create space above the heading */
+    margin-bottom: 50px; /* Add margin-bottom to space it from the content below */
+    padding-left: 50px; /* Add left padding to space the heading further from the left edge */
 }
 
 /* Section Spacing */
 section {
-    padding-top: 30px; /* Space above each section's content */
+    padding-top: 0px; /* Space above each section's content */
     padding-bottom: 50px; /* Space below each section's content */
 }
 
 /* Specific Section Padding */
 #dubai, #japan, #new-york {
-    padding-left: 40px; /* Move the section content further right */
+    padding-left: 60px; /* Move the section content further right */
 }
 
 /* Responsive Design */
