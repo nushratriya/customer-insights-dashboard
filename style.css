@@ -24,6 +24,16 @@ header h1 {
     color: #333;
 }
 
+/* Location Headings */
+section h2 {
+    font-family: 'Dancing Script', cursive; /* Same font as the welcome text */
+    font-size: 2.5rem;
+    color: #333; /* Adjust the color to match your style */
+    margin-left: 20px; /* Add space to move the heading to the right */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+
 /* Navigation Bar */
 .location-nav {
     display: flex;
