@@ -62,20 +62,6 @@ section h2 {
     border-radius: 5px;
 }
 
-/* Clicked (Active) State 
-.location-nav a:active {
-    color: #fff;
-    background-color: #e0dfdf; 
-    border: 2px solid #e0dfdf;
-    border-radius: 5px;
-} */
-
-/* Visited Links 
-.location-nav a:visited {
-    color: #d1cfcf; 
-}
-*/
-
 
 
 /* Polaroid Gallery */
