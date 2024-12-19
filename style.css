@@ -31,7 +31,7 @@ header h1 {
     gap: 40px;
     margin-top: 20px;
     font-family: 'Times New Roman;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .location-nav a {
@@ -41,6 +41,7 @@ header h1 {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     margin: 0 10px;
+    font-family: 'Times New Roman;
 }
 
 /* Hover Effect */
@@ -50,19 +51,19 @@ header h1 {
     border-radius: 5px;
 }
 
-/* Clicked (Active) State */
+/* Clicked (Active) State 
 .location-nav a:active {
     color: #fff;
-    background-color: #e0dfdf; /* Example purple shade */
+    background-color: #e0dfdf; 
     border: 2px solid #e0dfdf;
     border-radius: 5px;
-}
+} */
 
-/* Visited Links */
+/* Visited Links 
 .location-nav a:visited {
-    color: #d1cfcf; /* Example dark gray */
+    color: #d1cfcf; 
 }
-
+*/
 
 
 
