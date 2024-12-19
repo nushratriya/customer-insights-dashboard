@@ -30,8 +30,8 @@ header h1 {
 .location-nav {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Increase gap between links */
-    margin-top: 20px; /* Space below the banner */
+    gap: 40px;
+    margin-top: 20px;
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
 }
@@ -42,19 +42,31 @@ header h1 {
     padding: 10px 20px;
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
-    margin: 0 10px; /* Add horizontal margin for extra spacing */
+    margin: 0 10px;
 }
 
+/* Hover Effect */
 .location-nav a:hover {
     color: #fff;
     background-color: #d1cfcf; /* Matches the banner background */
     border-radius: 5px;
 }
 
-.location-nav a:focus {
-    outline: none;
-    border-color: #333;
+/* Clicked (Active) State */
+.location-nav a:active {
+    color: #fff;
+    background-color: #e0dfdf; /* Example purple shade */
+    border: 2px solid #e0dfdf;
+    border-radius: 5px;
 }
+
+/* Visited Links */
+.location-nav a:visited {
+    color: #d1cfcf; /* Example dark gray */
+}
+
+
+
 
 /* Polaroid Gallery */
 .polaroid-gallery {
