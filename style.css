@@ -28,7 +28,7 @@ header h1 {
 .polaroid-gallery {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 60px; /*20*/
     margin-top: 50px;
 }
 
