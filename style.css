@@ -57,7 +57,7 @@ section h2 {
 
 /* Hover Effect */
 .location-nav a:hover {
-    color: #fff;
+    color: black;
     background-color: #f5f5f5; /* Matches the banner background */
     border-radius: 5px;
 }
