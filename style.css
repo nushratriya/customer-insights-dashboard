@@ -41,7 +41,7 @@ section h2 {
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
-    font-family: 'Times New Roman;
+    font-family: 'Times New Roman';
     font-size: 2.5rem;
 }
 
@@ -52,7 +52,7 @@ section h2 {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     margin: 0 10px;
-    font-family: 'Times New Roman;
+
 }
 
 /* Hover Effect */
